@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   const RefreshToken = sequelize.define(
-    "refreshToken",
+    "RefreshToken",
     {
       id: {
         type: DataTypes.INTEGER,
@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
         allowNull: false,
       },
-      tokens: {
+      token: {
         type: DataTypes.TEXT,
         allowNull: false,
       },
